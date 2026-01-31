@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/admin.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li class="active">Menu Items</li>
+            <li>Orders</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="content">
+
+        <h1>Manage Menu</h1>
+
+        <!-- Add new item form -->
+        <section class="add-section">
+            <h2>Add New Menu Item</h2>
+
+            <form id="addForm">
+                <input type="text" id="name" placeholder="Item name" required>
+                <input type="number" id="price" placeholder="Price (£)" required>
+                <input type="text" id="image" placeholder="Image URL (optional)">
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <!-- Menu table -->
+        <section class="table-section">
+            <h2>Menu Items</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price (£)</th>
+                        <th>Image</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="menuTableBody">
+                    <!-- JS will insert rows here -->
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="/static/admin.js"></script>
+</body>
+</html>

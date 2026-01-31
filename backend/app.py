@@ -1,20 +1,26 @@
+# Frezzing backend application
 
-# app.py
-# -----------------------------
-# Main entrypoint for the Flask backend
-# Handles app creation and route registration
-# -----------------------------
+from flask import Flask, render_template
 
-from flask import Flask
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
-# Create the Flask application instance
-app = Flask(__name__)
-
-# Basic test route to confirm the API is running
 @app.route("/")
-def home():
-    return {"message": "Restaurant Ordering App API is running"}
+def index():
+    return render_template("index.html")
 
-# Run the app locally (not used in deployment)
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+@app.route("/signup")
+def signup():
+    return render_template("signup.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
+
