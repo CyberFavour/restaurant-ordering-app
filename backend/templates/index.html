@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Ordering App</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="nav-left">Favour's Restaurant</div>
+        <div class="nav-right">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page header -->
+    <header>
+        <h1>Welcome to Favour's Restaurant</h1>
+        <h4>Select your favourite meals below</h4>
+    </header>
+
+    <!-- Menu section -->
+    <section id="menu-section">
+        <h2>Menu</h2>
+
+        <!-- JS will insert menu cards here -->
+        <div id="menu-container"></div>
+    </section>
+
+    <!-- Basket section -->
+    <section id="basket-section">
+        <h2>Your Basket</h2>
+
+        <ul id="basket-list"></ul>
+
+        <button id="checkout-btn" class="basket-btn">🧺 Checkout</button>
+    </section>
+
+    <!-- Link to JS -->
+    <script src="/static/app.js"></script>
+</body>
+</html>
