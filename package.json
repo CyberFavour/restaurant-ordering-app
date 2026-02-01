@@ -1,0 +1,24 @@
+{
+  "name": "resturant-ordering-app",
+  "version": "1.0.0",
+  "description": "cloud-based restaurant food delivery system using Flask, SQLite, Firestore(NOSQL), Cloud Functions Paas and Google App Engine. \r Web app information: A restaurant ordering web application designed to increase sales and streamline order management.\r Test commit\r Initial commit test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyberFavour/restaurant-ordering-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CyberFavour/restaurant-ordering-app/issues"
+  },
+  "homepage": "https://github.com/CyberFavour/restaurant-ordering-app#readme",
+  "dependencies": {
+    "firebase-admin": "^13.6.0"
+  }
+}

@@ -205,3 +205,24 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+##################################################################################################
+
+# Firebase service account key
+backend/resturant-ordering-app-a7c1b-firebase-adminsdk-fbsvc-1b2206c828.json
+
+# Python virtual environment
+backend/venv/
+
+# Node.js dependencies
+node_modules/
+
+.env
+# Local environment variables
+backend/.env
+
+.env 
+#os and editor cluster
+.DS_Store
+Thumbs.db
+.vscode/
